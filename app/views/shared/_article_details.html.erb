@@ -1,0 +1,5 @@
+<%= article.title %>  
+<%= link_to "Edit", edit_article_path(article.id) if current_user %> <br />
+<%= article.programming_language %>
+<%= article.content.html_safe %> <br />
+<hr />

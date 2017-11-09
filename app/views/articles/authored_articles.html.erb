@@ -1,0 +1,9 @@
+<h1> My Articles </h1>
+
+<% unless @authored_articles.blank? %>
+	<% @authored_articles.each do |my_article| %>
+		<%= render partial: 'shared/article_details', locals: {article: my_article} %>
+	<% end %>
+<% else %>
+	<h2> You have not authored any articles yet </h2>
+<% end %>	
