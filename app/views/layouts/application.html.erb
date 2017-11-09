@@ -8,9 +8,17 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="container">
-    <%= render partial: "shared/header" %>
-    <%= yield %>
-    <%= render partial: "shared/footer" %>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <%= render partial: "shared/header" %>
+          <div class="main">
+            <%= yield %>
+          </div>          
+        </div>
+        <%= render partial: "shared/footer" %>
+      </div>
+    </div>
   </body>
 </html>

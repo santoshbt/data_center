@@ -1,4 +1,4 @@
-Search results for <%= @query %> <br />
+<h2> Search results for "<%= @query %>" </h2> <br />
 
 <% results.each do |result| %>
 	Title: <%= link_to result.title, article_path(result.id) %> <br />

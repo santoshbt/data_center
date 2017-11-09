@@ -1,6 +1,11 @@
-<%= form_tag 'search/articles', :remote => true  do %>
-	<%= text_field_tag 'search', nil, placeholder: 'Search by book title, programming language' %>
-	<%= submit_tag 'Search' %>
-<% end %>
+<div class="placeIt col-xs-4">			
+	<%= form_tag 'search/articles', :remote => true  do %>
+		<div class="form-group">
+			<%= text_field_tag 'search', nil, placeholder: 'Search by book title, programming language', class: "form-control" %><br />
+			<%= submit_tag 'Search' %>
+		</div>
+	<% end %>
+</div>
+<div class="clear"></div>
 
 <div class="search_results"></div>

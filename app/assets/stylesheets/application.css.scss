@@ -1,7 +1,31 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "articles.scss";
+@import "footer";
 
 .custom_nav{
 	margin-top: 29px;
+}
+
+.placeIt{
+	margin-top: 25px;
+}
+
+.main{
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+.user_actions{
+	float: right;
+	margin-right: 53px;
+}
+
+.header {
+  padding-bottom: 6px;
+  margin: -36px 0 20px;
+  border-bottom: 1px solid #d4c3c3;
 }

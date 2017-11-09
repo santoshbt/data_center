@@ -1,18 +1,45 @@
-<div class="notice">
-	<%= flash[:notice] %>
-</div>
-<div class="alert">	
-	<%= flash[:alert] %>
-</div>	
-
-<div class="user_sessions">
-		<%= link_to "Articles", articles_path %>
-		<%= link_to "Search", search_path %>
-	<% if current_user %>
-		<%= link_to "Sign out", destroy_user_session_path, method: :delete %>		
-	<% else %>
-		<%= link_to "Sign up", new_user_registration_path %>
-		<%= link_to "Sign in", new_user_session_path %>
-		<%= link_to "Chage Password", new_user_password_path %>
+<div class="header">
+    <h1>Data Center</h1> 
+    <% if flash[:notice] %>     
+	    <div class="alert alert-success">
+			<%= flash[:notice] %>
+		</div>
+	<% elsif flash[:alert] %>
+		<div class="alert alert-warning">
+			<%= flash[:alert] %>
+		</div>	
 	<% end %>
 </div>
+
+
+<ul class="nav nav-tabs">
+	<li class=<%=active(root_path)%>>
+		<%= link_to "Home", root_path %>
+	</li>
+	<li class=<%= active_article("articles") %>>
+		<%= link_to "Articles", articles_path %>
+	</li>
+	<li class=<%=active(search_path)%>>
+		<%= link_to "Search", search_path %>
+	</li>
+	<li class="dropdown pull-right">
+		 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Account<strong class="caret"></strong></a>
+		<ul class="dropdown-menu">
+			<% if current_user %>
+				<li>
+					<%= link_to "Sign out", destroy_user_session_path, method: :delete %>	
+				</li>
+			<% else %>
+				<li>
+					<%= link_to "Sign up", new_user_registration_path %>	
+				</li>
+				<li>
+					<%= link_to "Sign in", new_user_session_path %>	
+				</li>
+				<li>
+					<%= link_to "Chage Password", new_user_password_path %>	
+				</li>					
+			<% end %>			
+		</ul>
+	</li>
+</ul>

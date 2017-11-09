@@ -1,6 +1,6 @@
-<%= link_to article.title, article_path(article.id) %>  
-<%= link_to "Edit", edit_article_path(article.id) if current_user %> <br />
-<%= article.user.full_name %><br />
-<%= article.programming_language %> <br />
-<%= article.content %> 
+<p><%= link_to article.title, article_path(article.id) %>  </p>
+<span class="user_actions"> <%= link_to "Edit", edit_article_path(article.id) if current_user %> <br /> </span>
+<p><%= article.user.full_name %></p>
+<p><%= article.programming_language %> </p>
+
 <hr />

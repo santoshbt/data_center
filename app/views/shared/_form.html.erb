@@ -1,11 +1,13 @@
 <%= tinymce_assets %>
 
-<%= f.label :title %>
-<%= f.text_field :title %>
+
+<%= f.label :title %> 
+<%= f.text_field :title,  class: "form-control" %>
 
 <%= f.label :programming_language %>
-<%= f.text_field :programming_language %>
+<%= f.text_field :programming_language,  class: "form-control" %>
 
 <%= f.label :content %>
 <%= f.text_area :content, :class => "tinymce", :rows => 20, :cols => 50 %>
+
 

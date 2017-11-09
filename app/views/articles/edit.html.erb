@@ -1,7 +1,14 @@
-<%= form_for @article do |f| %>
-	<%= render partial: 'shared/form', locals: {f: f} %>
-	
-	<%= f.submit "Update Article" %>
-<% end %>
+<%= render partial: '/shared/article_actions' %>
 
+<div class="placeIt">
+	<h1> Edit Article </h1>
+	<%= form_for @article do |f| %>
+		<div class="form-group col-xs-4">
+			<%= render partial: 'shared/form', locals: {f: f} %>
 
+			<br />
+			
+			<%= f.submit "Update Article" %>
+		</div>
+	<% end %>
+</div>
