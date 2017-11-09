@@ -28,6 +28,9 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 gem 'tinymce-rails'
+gem 'thinking-sphinx'
+gem 'devise'
+gem 'figaro'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -39,6 +42,10 @@ gem 'tinymce-rails'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'rspec-rails', '~> 3.0'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'factory_bot_rails', '~> 4.7'
 end
 
 group :development do
