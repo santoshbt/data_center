@@ -1,5 +1,5 @@
-User Stories
-------------
+Completed User Stories
+-----------------------
 
 A visitor can create an account
 A visitor can login with appropriate details and become an authenticated visitor
@@ -15,8 +15,6 @@ etc) to be displayed and styled appropriately when viewed.
 An authenticated visitor editing an article can mark a section of copy as content to be displayed
 and styled appropriately when viewed.
 An authenticated visitor can log out
-
-
 A visitor can search articles by title and programming language
 A visitor with an account can reset their password via email
 

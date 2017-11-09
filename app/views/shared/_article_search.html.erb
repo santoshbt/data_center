@@ -1,0 +1,10 @@
+Search results for <%= @query %> <br />
+
+<% results.each do |result| %>
+	Title: <%= link_to result.title, article_path(result.id) %> <br />
+	Programming Language: <%= result.programming_language %> <br />
+	Author: <%= result.user.full_name %>
+	Published on : <%= result.content %>
+
+	<hr />
+<% end %>

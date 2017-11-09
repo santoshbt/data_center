@@ -1,5 +1,6 @@
 <h1> Article </h1>
 
-<h2> Title : </h2> <%= @article.title %> <br />
-<h2> Programming Language </h2> <%= @article.programming_language %>
+<h2> Title : </h2> <%= @article.title %> <%= link_to "Edit", edit_article_path(@article.id) if current_user %> <br />
+<h2> Programming Language: </h2> <%= @article.programming_language %>
+<h2> Author: </h2> <%= @article.user.full_name %>
 <h2> Content : </h2>  <%= @article.content.html_safe %>
