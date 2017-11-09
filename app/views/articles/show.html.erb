@@ -1,4 +1,4 @@
-<%= render partial: '/shared/article_actions' %>
+<%= render partial: 'shared/article_actions' %>
 
 <h1> Article </h1>
 
@@ -6,3 +6,4 @@
 <h2> Programming Language: </h2> <%= @article.programming_language %>
 <h2> Author: </h2> <%= @article.user.full_name %>
 <h2> Content : </h2>  <%= @article.content.html_safe %>
+<h2> Published on : </h2> <%= readable_date @article.updated_at %>
