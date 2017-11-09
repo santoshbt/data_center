@@ -1,22 +1,22 @@
 Completed User Stories
 -----------------------
 
-A visitor can create an account
-A visitor can login with appropriate details and become an authenticated visitor
-An authenticated visitor can create an article
-A visitor can view an index of articles
-A visitor can view an article with some formatting
-An authenticated visitor can view a list or articles they authored
-An authenticated visitor can modify an existing article they authored
-An authenticated visitor editing an article can add and remove multiple sections from a single
+1) A visitor can create an account
+2) A visitor can login with appropriate details and become an authenticated visitor
+3) An authenticated visitor can create an article
+4) A visitor can view an index of articles
+5) A visitor can view an article with some formatting
+6) An authenticated visitor can view a list or articles they authored
+7) An authenticated visitor can modify an existing article they authored
+8) An authenticated visitor editing an article can add and remove multiple sections from a single
 article.
-An authenticated visitor editing an article can mark a section of copy as code (js/ruby/java/c++
+9) An authenticated visitor editing an article can mark a section of copy as code (js/ruby/java/c++
 etc) to be displayed and styled appropriately when viewed.
-An authenticated visitor editing an article can mark a section of copy as content to be displayed
+10) An authenticated visitor editing an article can mark a section of copy as content to be displayed
 and styled appropriately when viewed.
-An authenticated visitor can log out
-A visitor can search articles by title and programming language
-A visitor with an account can reset their password via email
+11) An authenticated visitor can log out
+12) A visitor can search articles by title and programming language
+13) A visitor with an account can reset their password via email
 
 
 Development Setup
