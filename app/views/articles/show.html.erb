@@ -1,3 +1,5 @@
+<%= render partial: '/shared/article_actions' %>
+
 <h1> Article </h1>
 
 <h2> Title : </h2> <%= @article.title %> <%= link_to "Edit", edit_article_path(@article.id) if current_user %> <br />

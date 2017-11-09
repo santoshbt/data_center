@@ -1,10 +1,10 @@
-<h2> Search results for "<%= @query %>" </h2> <br />
+<h2> Search results for "<%= @query %>" </h2> <div class="clear">
+<h3> Found <%= @results.size %> results</h3> <div class="clear">
 
 <% results.each do |result| %>
-	Title: <%= link_to result.title, article_path(result.id) %> <br />
-	Programming Language: <%= result.programming_language %> <br />
-	Author: <%= result.user.full_name %>
-	Published on : <%= result.content %>
+	<p><h4>Title:</h4> <%= link_to result.title, article_path(result.id) %> </p>
+	<p><h4>Programming Language:</h4> <%= result.programming_language %> </p>
+	<p><h4>Author:</h4> <%= result.user.full_name %></p>	
 
 	<hr />
 <% end %>
