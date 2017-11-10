@@ -1,5 +1,5 @@
 <p><%= link_to article.title, article_path(article.id) %>  </p>
-<span class="user_actions"> <%= link_to "Edit", edit_article_path(article.id) if current_user %> <br /> </span>
+<span class="user_actions"> <%= link_to "Edit", edit_article_path(article.id), class: "btn btn-primary btn-default" if current_user %> <br /> </span>
 <p><%= article.user.full_name %></p>
 <p><%= article.programming_language %> </p>
 

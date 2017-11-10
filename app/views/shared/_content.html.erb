@@ -1,0 +1,8 @@
+<p><h3> Title : </h3> <%= @article.title %> 
+<span class="user_actions">
+	<%= link_to "Edit", edit_article_path(@article.id), class: "btn btn-primary btn-default"  if current_user %>
+</span> </p><hr />
+<h3> Programming Language: </h3> <%= @article.programming_language %> <hr />
+<h3> Author: </h3> <%= @article.user.full_name %> <hr />
+<h3> Content : </h3>  <%= @article.content.html_safe %>. <hr />
+<h3> Published on : </h3> <%= readable_date @article.updated_at %> <hr />

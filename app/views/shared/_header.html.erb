@@ -1,15 +1,16 @@
 <div class="header">
-    <h1>Data Center</h1> 
-    <% if flash[:notice] %>     
-	    <div class="alert alert-success">
-			<%= flash[:notice] %>
-		</div>
-	<% elsif flash[:alert] %>
-		<div class="alert alert-warning">
-			<%= flash[:alert] %>
-		</div>	
-	<% end %>
+    <h1>Data Center</h1>
 </div>
+
+<% if flash[:notice] %>     
+    <div class="alert alert-success">
+		<%= flash[:notice] %>
+	</div>
+<% elsif flash[:alert] %>
+	<div class="alert alert-warning">
+		<%= flash[:alert] %>
+	</div>	
+<% end %>
 
 
 <ul class="nav nav-tabs">

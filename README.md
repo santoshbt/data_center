@@ -32,7 +32,11 @@ Development Setup
 
 5) Search is implemented by Thinking Sphinx. Start the server by executing the following command
 		rake ts:rebuild
+		
+		- Check the status of Thinking sphinx, if not running start and index
+
 		rake ts:start
+		rake ts:index
 
 6) Article creation can be done in TinyMCE editor.
 
@@ -44,7 +48,7 @@ Development Setup
 
 9) For Reset Password Functionality, I have not set the SMTP server details due to confidentiality on credentials in development          environment.  But one can clearly check the mail sending in console and follow the link to reset password.	
 
-	
+10) Run rails s	
 
 
 
