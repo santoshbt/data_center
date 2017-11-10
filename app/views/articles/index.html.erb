@@ -7,3 +7,5 @@
 <% @articles.each do |article| %>
 	<%= render partial: 'shared/article_details', locals: {article: article} %>	
 <% end %>
+
+<%= will_paginate @articles %>

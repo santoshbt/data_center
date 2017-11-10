@@ -17,6 +17,7 @@ and styled appropriately when viewed.
 11) An authenticated visitor can log out
 12) A visitor can search articles by title and programming language
 13) A visitor with an account can reset their password via email
+14) Pagination for article listing is implemented
 
 
 Development Setup

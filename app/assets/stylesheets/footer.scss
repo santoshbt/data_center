@@ -9,13 +9,12 @@ body {
   margin-bottom: 60px;
 }
 .footer {
-  position: absolute;
   bottom: 0;
-  width: 81%;
-  /* Set the fixed height of the footer here */
+  width: 100%;
   height: 60px;
-  line-height: 60px; /* Vertically center the text there */
+  line-height: 60px;
   background-color: #bfc9ca;
+  margin-bottom: -61px;
 }
 
 
