@@ -2,7 +2,8 @@ class ArticlesController < ApplicationController
 	before_action :user_signed_in?, only: [:new, :create, :edit, :update, :authored_articles]
 
 	def index
-		@articles = Article.paginate(page: params[:page], per_page: 3)
+		articles = Article.includes(:user)
+		@articles = articles.paginate(page: params[:page], per_page: 3)
 	end
 
 	def new
