@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
 
 	def index
 		articles = Article.includes(:user)
-		@articles = articles.paginate(page: params[:page], per_page: 3)
+		@articles = articles.paginate(page: params[:page], per_page: 5)
 	end
 
 	def new
@@ -45,7 +45,7 @@ class ArticlesController < ApplicationController
 
 	def authored_articles
 		authored_articles = Article.authored current_user.id
-		@authored_articles = authored_articles.paginate(:page => params[:page], :per_page => 3)
+		@authored_articles = authored_articles.paginate(:page => params[:page], :per_page => 5)
 	end
 
 	private
