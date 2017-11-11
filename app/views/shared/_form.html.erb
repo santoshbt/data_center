@@ -1,13 +1,15 @@
 <%= tinymce_assets %>
 
 
-<%= f.label :title %><span class="required"></span>
+<%= f.label :title %><span class="required">*</span>
 <%= f.text_field :title,  class: "form-control" %>
+<br />
 
 <%= f.label :programming_language %>
 <%= f.text_field :programming_language,  class: "form-control" %>
+<br />
 
-<%= f.label :content %><span class="required"></span>
+<%= f.label :content %><span class="required">*</span>
 <%= f.text_area :content, :class => "tinymce", :rows => 20, :cols => 50 %>
 
 

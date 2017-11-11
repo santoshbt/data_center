@@ -3,3 +3,53 @@
 @import "articles.scss";
 @import "common.scss";
 
+.custom_nav{
+	margin-top: 29px;
+}
+
+.placeIt{
+	margin-top: 25px;
+}
+
+.main{
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+.user_actions{
+	float: right;
+	margin-right: 53px;
+}
+
+.header {
+  padding-bottom: 6px;
+  margin: -19px 0 20px;
+  border-bottom: 1px solid #d4c3c3;
+  background: #aed6f1;
+}
+
+.required{
+	color: red;
+	font-weight: bolder;
+	margin: 0 0 0 5px;	
+}
+
+footer {
+    position: fixed;
+    height: 65px;
+    bottom: 0;
+    width: 79%;
+    margin-left: -3px;
+    background-color: #bfc9ca;
+}
+
+.header-text{
+	margin-left:10px;
+}
+
+.footer-txt{
+	margin: 30px 0 0 11px;
+}
