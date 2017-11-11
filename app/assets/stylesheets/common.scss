@@ -26,6 +26,11 @@
   background: #aed6f1;
 }
 
+.required{
+  color: #ff3333;
+  font-weight: bolder;
+  margin: 0 0 0 5px;  
+}
 
 footer {
     position: fixed;
@@ -42,4 +47,18 @@ footer {
 
 .footer-txt{
 	margin: 30px 0 0 11px;
+}
+
+.welcome_msg{
+  padding-left: 56%;
+  margin-top: 11px;  
+}
+
+#error_explanation{
+    border: solid;
+    background-color: #b3ffff;
+    margin: 0 0 10 27px;
+    align-content: center;
+    margin-bottom: 12px;
+    padding-left: 12px;
 }

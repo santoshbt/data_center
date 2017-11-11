@@ -23,19 +23,24 @@
 	<li class=<%=active(search_path)%>>
 		<%= link_to "Search", search_path %>
 	</li>
+	<li class="welcome_msg">
+		<% if current_user %>
+			Welcome <%= current_user.full_name %>
+		<% end %>			
+	</li>
 	<li class="dropdown pull-right">
 		 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Account<strong class="caret"></strong></a>
 		<ul class="dropdown-menu">
 			<% if current_user %>
 				<li>
-					<%= link_to "Sign out", destroy_user_session_path, method: :delete %>	
+					<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>	
 				</li>
 			<% else %>
 				<li>
-					<%= link_to "Sign up", new_user_registration_path %>	
+					<%= link_to "Sign Up", new_user_registration_path %>	
 				</li>
 				<li>
-					<%= link_to "Sign in", new_user_session_path %>	
+					<%= link_to "Sign In", new_user_session_path %>	
 				</li>
 				<li>
 					<%= link_to "Chage Password", new_user_password_path %>	

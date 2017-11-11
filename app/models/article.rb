@@ -4,7 +4,9 @@ class Article < ApplicationRecord
 	validates :title, presence: true
 	validates :content, presence: true
 
+	default_scope { order(updated_at: :desc) }
 	scope :authored, -> (user_id) { where(:user_id => user_id) }
+	
 	after_save ThinkingSphinx::RealTime.callback_for(:article)
 
 	def title

@@ -4,7 +4,8 @@ class SearchController < ApplicationController
 	
 	
 	def search_content
-		@query = params[:search]
-		@results = Article.search(params[:search], :match_mode => :any)		
+		@results = []
+		@query = params[:search]		
+		@results = Article.search(params[:search], :match_mode => :any)  unless params[:search].blank?
 	end
 end
