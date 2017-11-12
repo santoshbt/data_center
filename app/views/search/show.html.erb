@@ -1,8 +1,8 @@
 <div class="placeIt col-xs-4">			
-	<%= form_tag 'search/articles', :remote => true  do %>
+	<%= form_tag 'search/articles', :method => :get, :id => 'search-form', :remote => true  do %>
 		<div class="form-group">
 			<%= text_field_tag 'search', nil, placeholder: 'Search by book title, programming language', class: "form-control" %><br />
-			<%= submit_tag 'Search', class: "btn btn-success"  %>
+			<%= submit_tag 'Search', id: "search", class: "btn btn-success"  %>
 		</div>
 	<% end %>
 </div>
@@ -10,3 +10,10 @@
 
 <div class="search_results"></div>
 
+<script type="text/javascript">
+	$(function(){
+		$("#search").on("click"){
+			$("search-form").submit();
+		}		
+	})
+</script>

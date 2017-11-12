@@ -1,5 +1,5 @@
-<h2> Search results for "<%= @query %>" </h2> <div class="clear">
-<h3> Found <%= @results.size %> results</h3> <div class="clear">
+<h2> Search results for "<%= @query %>" </h2> <div class="clear"></div>
+<h3> Found <%= @total_results %> results</h3> <div class="clear"></div>
 
 <% results.each do |result| %>
 	<p><h4>Title:</h4> <%= link_to result.title, article_path(result.id) %> </p>
@@ -8,3 +8,11 @@
 
 	<hr />
 <% end %>
+
+<%= will_paginate @results %>
+
+<script>
+$(function(){
+   $('.pagination a').attr('data-remote', 'true')
+});
+</script>
