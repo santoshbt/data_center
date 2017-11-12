@@ -44,8 +44,9 @@ Development Setup
 7) Content can be formatted to code and can change styles using its features.
 
 8) TDD/BDD is executed using RSpec and Capybara features.
-	User behaviour is tested with Capybara
-	Unit Testing (Model) is tested with RSpec
+	User(Browser) behaviour is tested with Capybara in spec folder.
+	Unit Testing (Model) is tested with RSpec in models folder.
+
 
 9) For Reset Password Functionality, I have not set the SMTP server details due to confidentiality on credentials in development          environment.  But one can clearly check the mail sending in console and follow the link to reset password.	
 
