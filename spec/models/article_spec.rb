@@ -18,7 +18,7 @@ RSpec.describe User, type: :model do
   	end
   end
 
-  describe "edit" do
+  describe "updation" do
     before do
        article = FactoryBot.create(:article)   
        @article = Article.find article.id

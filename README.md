@@ -44,7 +44,7 @@ Development Setup
 7) Content can be formatted to code and can change styles using its features.
 
 8) TDD/BDD is executed using RSpec and Capybara features.
-	User(Browser) behaviour is tested with Capybara in spec/seatures folder.
+	User(Browser) behaviour is tested with Capybara in spec/features folder.
 	Unit Testing (Model) is tested with RSpec in spec/models folder.
 
 
