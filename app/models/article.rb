@@ -2,12 +2,10 @@ class Article < ApplicationRecord
 	belongs_to :user, optional: false
 
 	validates :title, presence: true
-	validates :content, presence: true
-
-	default_scope { order(updated_at: :desc) }
-	scope :authored, -> (user_id) { where(:user_id => user_id) }
+	validates :content, presence: true 
 	
-	after_save ThinkingSphinx::RealTime.callback_for(:article)
+	include Searchable
+	include Listable
 
 	def title
 		self[:title].capitalize if self[:title]
