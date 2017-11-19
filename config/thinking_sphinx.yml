@@ -1,2 +1,2 @@
 development:
-  min_prefix_length: 3
+  min_infix_len: 1
